@@ -8,13 +8,18 @@
             margin: auto;
             zoom: 300%;
             width: 110px;
-            border-color: black;
+            border-color: #FFFFFF;
             accent-color: #191919;
             color: white;
             background-color: #191919;
+            text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.5);
         }
         #button2 {
             zoom: 300%;
+        }
+
+        div#divyap {
+            width: 500px;
         }
     </style>
     <script>
@@ -26,10 +31,18 @@
             var id = "paragraph";
             let id2 = "paragraph";
             const id3 = "paragraph";
-            document.getElementById("paragraph").innerHTML = "Boo!";
+
+            // Changes text and color on left click press
+            document.getElementById("paragraph").innerHTML = "Holding left click!";
+            document.getElementById("paragraph").style.color = "red";
+            document.getElementById("but").style.textShadow = "0px 0px 0px";
         }
+
+        // Changes text back to white on left click release
         function clickFunction2() {
-            document.getElementById("paragraph").innerHTML = "O.o";
+            document.getElementById("paragraph").innerHTML = "Original text";
+            document.getElementById("paragraph").style.color = "white";
+            document.getElementById("but").style.textShadow = "0px 1px 0px rgba(255, 255, 255, 0.5)";
         }
         function funk123() {
             document.getElementById
@@ -42,7 +55,15 @@
 </head>
 <body>
     <h1>Aleksin Sivusto</h1>
-    <p id="paragraph">O.o</p>
-    <button class="button" type="button" onmousedown="clickFunction()" onmouseup="clickFunction2()">Hold left click.</button>
+    <p id="paragraph">Original text</p>
+    
+    <button id="but" class="button" onmousedown="clickFunction()" onmouseup="clickFunction2()">
+        <span href="#" class="innerButton">
+             Hold left click
+        </span>
+  </button>
+    <div id="divyap">
+        <p id="yap">var, let, ja const eroavat toisistaan niin, että var on tosi vanha tapa asettaa variable. Sitä käytetään vaan yhteensopivuuden takia vanhoiden selaimien kanssa. </p>
+    </div>
 </body>
 </html>

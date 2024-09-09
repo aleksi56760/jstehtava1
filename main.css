@@ -6,23 +6,40 @@
 
 body {
     color: white;
-    background-color: #191919;
+    background-color: #000000;
     font-family: "Minecraft", 'Arial';
     font-size: 24px;
     text-align: center;
     font-weight: lighter;
     vertical-align: middle;
     display: table-cell;
+    text-shadow: 0 0 10px rgb(185, 185, 185), 0 0 20px rgb(189, 189, 189), 0 0 40px rgb(65, 65, 65), 0 0 80px rgb(139, 139, 139);
 }
 
 .button {
     font-family: "Minecraft";
     font-weight: lighter;
+    width: 110px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.button span {
+    position: relative;
+}
+
+.button span:active {
+    top: 1px;
 }
 
 h1 {
     font-style: italic;
     font-weight: lighter;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    text-shadow: 0 0 10px rgb(185, 185, 185), 0 0 20px rgb(189, 189, 189), 0 0 40px rgb(65, 65, 65), 0 0 80px rgb(139, 139, 139);
 }
 
 html {
@@ -34,7 +51,14 @@ html, body {
     height: 100%;
 }
 
-#iltaalink {
-    color: blueviolet;
+#yap {
+    font-weight: lighter;
     font-family: monospace;
+}
+
+#paragraph {
+    text-shadow: 0px 0px 10px black;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
 }
