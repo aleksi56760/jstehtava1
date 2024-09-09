@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "Minecraft";
+    src: url(Minecraft.ttf);
+}
+
+
+body {
+    color: white;
+    background-color: #191919;
+    font-family: "Minecraft", 'Arial';
+    font-size: 24px;
+    text-align: center;
+    font-weight: lighter;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.button {
+    font-family: "Minecraft";
+    font-weight: lighter;
+}
+
+h1 {
+    font-style: italic;
+    font-weight: lighter;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+html, body {
+    height: 100%;
+}
+
+#iltaalink {
+    color: blueviolet;
+    font-family: monospace;
+}
