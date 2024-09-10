@@ -29,6 +29,7 @@ body {
 .button:hover {
     cursor: pointer;
     border-color: red;
+    box-shadow: 0 0 10px rgb(185, 0, 0), 0 0 20px rgb(189, 0, 0), 0 0 40px rgb(65, 0, 0), 0 0 80px rgb(139, 0, 0);
 }
 
 .button span {
@@ -46,6 +47,13 @@ h1 {
     -moz-user-select: none;
     user-select: none;
     text-shadow: 0 0 10px rgb(185, 185, 185), 0 0 20px rgb(189, 189, 189), 0 0 40px rgb(65, 65, 65), 0 0 80px rgb(139, 139, 139);
+    transition: 250ms;
+}
+
+h1:hover {
+    text-shadow: 0 0 10px rgb(185, 0, 0), 0 0 20px rgb(189, 0, 0), 0 0 40px rgb(65, 0, 0), 0 0 80px rgb(139, 0, 0);
+    color: red;
+    cursor: default;
 }
 
 html {
@@ -84,4 +92,34 @@ html, body {
 
 #ikä:hover {
     border-color: red;
+    box-shadow: 0 0 10px rgb(185, 0, 0), 0 0 20px rgb(189, 0, 0), 0 0 40px rgb(65, 0, 0), 0 0 80px rgb(139, 0, 0);
+}
+
+#tldr {
+    color: white;
+    border: solid;
+    border-width: 6px;
+    border-radius: 90px;
+    transition: 250ms;
+    zoom: 75%;
+}
+
+#tldr:hover {
+    color: red;
+    box-shadow: 0 0 10px rgb(185, 0, 0), 0 0 20px rgb(189, 0, 0), 0 0 40px rgb(65, 0, 0), 0 0 80px rgb(139, 0, 0);
+}
+
+#blade {
+    margin: auto;
+    width: 180px;
+    height: 20px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+#blade:hover {
+    color: red;
+    text-shadow: 0 0 10px rgb(185, 0, 0), 0 0 20px rgb(189, 0, 0), 0 0 40px rgb(65, 0, 0), 0 0 80px rgb(139, 0, 0);
+    transition: 250ms;
+    cursor: default;
 }
