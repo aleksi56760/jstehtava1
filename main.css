@@ -19,10 +19,16 @@ body {
 .button {
     font-family: "Minecraft";
     font-weight: lighter;
-    width: 110px;
+    width: 80px;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
+    transition: 250ms;
+}
+
+.button:hover {
+    cursor: pointer;
+    border-color: red;
 }
 
 .button span {
@@ -58,7 +64,24 @@ html, body {
 
 #paragraph {
     text-shadow: 0px 0px 10px black;
+    font-family: monospace;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
+}
+
+#ikä {
+    width: 20px;
+    zoom: 200%;
+    border-color: white;
+    background-color: #191919;
+    color: white;
+    margin-bottom: 5px;
+    font-family: "Minecraft";
+    text-align: center;
+    transition: 250ms;
+}
+
+#ikä:hover {
+    border-color: red;
 }

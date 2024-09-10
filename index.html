@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="app.js"></script>
     <style>
         body {
-            zoom: 200%;
+            zoom: 150%;
         }
         
         .button {
@@ -48,9 +49,6 @@
             document.getElementById("paragraph").style.color = "white";
             document.getElementById("but").style.textShadow = "0px 1px 0px rgba(255, 255, 255, 0.5)";
         }
-        function funk123() {
-            document.getElementById
-        }
     </script>
     <link rel="stylesheet" href="main.css">
     <meta charset="UTF-8">
@@ -59,11 +57,11 @@
 </head>
 <body>
     <h1>Aleksin Sivusto</h1>
-    <p id="paragraph">Original text</p>
-    
-    <button id="but" class="button" onmousedown="clickFunction()" onmouseup="clickFunction2()">
+    <p id="paragraph">Kirjoita ikäsi alle ja paina nappia</p>
+    <input id="ikä" value="" />
+    <button id="but" class="button" onclick="agefunk()" onmousedown="clickFunction()" onmouseup="clickFunction2()">
         <span href="#" class="innerButton">
-             Hold left click
+             Click me!
         </span>
   </button>
     <div id="divyap">
