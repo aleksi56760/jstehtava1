@@ -32,6 +32,10 @@ body {
     box-shadow: 0 0 10px rgb(185, 0, 0), 0 0 20px rgb(189, 0, 0), 0 0 40px rgb(65, 0, 0), 0 0 80px rgb(139, 0, 0);
 }
 
+.button:active {
+    border-color: #c00000;
+}
+
 .button span {
     position: relative;
 }
@@ -71,7 +75,7 @@ html, body {
 }
 
 #paragraph {
-    text-shadow: 0px 0px 10px black;
+    text-shadow: 0px 0px 1px rgb(255, 0, 0), 0px 2px 1px rgb(200, 0, 0), 0px 4px 1px rgb(150, 0, 0), 0px 6px 1px rgb(100, 0, 0);
     font-family: monospace;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -87,6 +91,8 @@ html, body {
     margin-bottom: 5px;
     font-family: "Minecraft";
     text-align: center;
+    border-radius: 5px;
+    border: solid;
     transition: 250ms;
 }
 
