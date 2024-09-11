@@ -23,13 +23,14 @@ body {
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
-    transition: 250ms;
+    transition: 750ms;
 }
 
 .button:hover {
     cursor: pointer;
     border-color: red;
     box-shadow: 0 0 10px rgb(185, 0, 0), 0 0 20px rgb(189, 0, 0), 0 0 40px rgb(65, 0, 0), 0 0 80px rgb(139, 0, 0);
+    transition: 250ms;
 }
 
 .button:active {
@@ -58,6 +59,7 @@ h1:hover {
     text-shadow: 0 0 10px rgb(185, 0, 0), 0 0 20px rgb(189, 0, 0), 0 0 40px rgb(65, 0, 0), 0 0 80px rgb(139, 0, 0);
     color: red;
     cursor: default;
+    transition: 250ms;
 }
 
 html {
@@ -99,6 +101,7 @@ html, body {
 #ikä:hover {
     border-color: red;
     box-shadow: 0 0 10px rgb(185, 0, 0), 0 0 20px rgb(189, 0, 0), 0 0 40px rgb(65, 0, 0), 0 0 80px rgb(139, 0, 0);
+    transition: 250ms;
 }
 
 #tldr {
@@ -113,6 +116,7 @@ html, body {
 #tldr:hover {
     color: red;
     box-shadow: 0 0 10px rgb(185, 0, 0), 0 0 20px rgb(189, 0, 0), 0 0 40px rgb(65, 0, 0), 0 0 80px rgb(139, 0, 0);
+    transition: 250ms;
 }
 
 #blade {
@@ -121,6 +125,7 @@ html, body {
     height: 20px;
     margin-bottom: 10px;
     margin-top: 50px;
+    transition: 250ms;
 }
 
 #blade:hover {
