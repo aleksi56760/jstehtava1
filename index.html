@@ -53,6 +53,20 @@
             document.getElementById("but").style.textShadow = "0px 1px 0px rgba(255, 255, 255, 0.5)";
         }
     </script>
+    <script>
+        function loopfunk() {
+        let text = ""
+        let i = 0;
+    
+        do {
+            text += "<br>Huhuu?!";
+            i++;
+        }
+        while (i < 5)
+    
+        document.getElementById("loopius").innerHTML = text;
+    }    
+          </script>
     <link rel="stylesheet" href="main.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -75,5 +89,11 @@
         <source src="tldr.mp3" type="audio/mpeg">
       TL;DR
       </audio>
+<div class="flexbox1">
+    <button class="button" onclick="loopfunk()" ondblclick=""><span href="#" class="innerButton"></span>
+        Loop Function Button
+   </span></button>
+      <p id="loopius"></p>
+</div>
 </body>
 </html>
