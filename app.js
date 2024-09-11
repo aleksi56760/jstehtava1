@@ -17,3 +17,15 @@ function loopfunk() {
 
   document.getElementById("loopius").innerHTML = text;
 }
+
+function eläimet() {
+  const eläimet = ["Koira", "<br>Kissa", "<br>Hevonen", "<br>Hiiri", "<br>Marsu"];
+
+  let text2 = "";
+  for (let a = 0; a < eläimet.length; a++) {
+    text2 += eläimet[a] + "<br>";
+  }
+  const final = eläimet.map(e=> e + '!')
+
+  document.getElementById("elä").innerHTML = final;
+}
