@@ -28,6 +28,8 @@
 
         div#divyap {
             width: 500px;
+            margin: auto;
+            text-align: center;
         }
     </style>
     <script>
@@ -88,6 +90,22 @@
        </span></button>
           <p id="elä"></p>
     </div>
+</div>
+<div id="nimidiv">
+<input style="margin-top: 20px;" type="text" id="teksti123" value="">
+
+<p>Kirjoita Etu- ja Sukunimesi</p>
+
+<button onclick="myFunction()">Painike</button>
+
+<p id="wtf"></p>
+
+<script>
+function myFunction() {
+  let x = document.getElementById("teksti123").value;
+  document.getElementById("wtf").innerHTML = "Hei " + x;
+}
+</script>
 </div>
 </body>
 </html>
