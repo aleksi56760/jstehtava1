@@ -92,20 +92,26 @@
     </div>
 </div>
 <div id="nimidiv">
-<input style="margin-top: 20px;" type="text" id="teksti123" value="">
+    <p>Kirjoita Etu- ja Sukunimesi</p>
+    <input style="display: block; margin: auto; margin-bottom: 5px;" type="text" id="etunimi" value="Etunimi">
+    <input style="display: block; margin: auto; margin-top: 5px;" type="text" id="sukunimi" value="Sukunimi">
+  
+    <button onclick="etusuku()" style="margin-top: 20px;">Paina tästä ja scrollaa alaspäin</button>
+  
+    <p id="wtf"></p>
+  
+    <script>
+      function etusuku() {
+        let etunimi = document.getElementById("etunimi").value;
+        let sukunimi = document.getElementById("sukunimi").value;
 
-<p>Kirjoita Etu- ja Sukunimesi</p>
-
-<button onclick="myFunction()">Painike</button>
-
-<p id="wtf"></p>
-
-<script>
-function myFunction() {
-  let x = document.getElementById("teksti123").value;
-  document.getElementById("wtf").innerHTML = "Hei " + x;
-}
-</script>
-</div>
+        if (etunimi && sukunimi) {
+        document.getElementById("wtf").innerHTML = "Hei " + etunimi + " " + sukunimi;
+      } else {
+        document.getElementById("wtf").innerHTML = "Yksi tai useampi tekstiboksi on tyhjä.";
+      }
+    }
+    </script>
+  </div>
 </body>
 </html>
