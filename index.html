@@ -96,17 +96,20 @@
     <input style="display: block; margin: auto; margin-bottom: 5px;" type="text" id="etunimi" value="Etunimi">
     <input style="display: block; margin: auto; margin-top: 5px;" type="text" id="sukunimi" value="Sukunimi">
   
-    <button onclick="etusuku()" style="margin-top: 20px;">Paina tästä ja scrollaa alaspäin</button>
+    <button onclick="tuloste1()" style="margin-top: 20px;">Paina tästä ja scrollaa alaspäin</button>
   
     <p id="wtf"></p>
   
     <script>
-      function etusuku() {
+      function etusuku(p1, p2) {
+       return "Hei " + p1 + " " + p2;
+    }
+    function tuloste1() {
         let etunimi = document.getElementById("etunimi").value;
         let sukunimi = document.getElementById("sukunimi").value;
 
-        if (etunimi && sukunimi) {
-        document.getElementById("wtf").innerHTML = "Hei " + etunimi + " " + sukunimi;
+    if (etunimi && sukunimi) {
+        document.getElementById("wtf").innerHTML = etusuku(etunimi, sukunimi);
       } else {
         document.getElementById("wtf").innerHTML = "Yksi tai useampi tekstiboksi on tyhjä.";
       }
